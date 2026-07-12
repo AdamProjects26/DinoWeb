@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SnakeWeb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Brand Header without Ads badge -->
+        <div class="brand-header">
+            <span class="logo-text">SnakeWeb</span>
+        </div>
+
+        <div class="score-board">
+            <div class="score-box">SCORE: <span id="current-score">0</span></div>
+            <div class="score-box">HIGH: <span id="high-score">0</span></div>
+        </div>
+
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div class="controls-overlay" id="overlay">
+                <h1 id="overlay-text">SNAKEWEB</h1>
+                <button id="start-btn">START GAME</button>
+            </div>
+        </div>
+
+        <!-- Mobile Controls -->
+        <div class="mobile-controls">
+            <div class="row"><button class="nav-btn" id="btn-up">▲</button></div>
+            <div class="row">
+                <button class="nav-btn" id="btn-left">◀</button>
+                <div class="spacer"></div>
+                <button class="nav-btn" id="btn-right">▶</button>
+            </div>
+            <div class="row"><button class="nav-btn" id="btn-down">▼</button></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
